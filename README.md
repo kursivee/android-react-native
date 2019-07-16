@@ -15,3 +15,9 @@
 - Setting up authentication https://www.jfrog.com/confluence/display/RTF/Maven+Repository#MavenRepository-SettingUpSecurityinMavenSettings
 - Deploy .aar by following here https://maven.apache.org/guides/mini/guide-3rd-party-jars-remote.html
 - In this case run `mvn deploy:deploy-file -Dfile=./react-native-0.60.3.aar -DgroupId=com.android -DartifactId=react-native -Dversion=0.60.3 -Dpackaging=aar -DrepositoryId=central -Durl=http://localhost:8081/artifactory/libs-release`
+
+### Deploy Script
+Created a deploy script that simplifies yarn installing and deploying to artifactory
+
+- `cd jsfiles`
+- `sh deploy`
