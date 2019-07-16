@@ -23,7 +23,9 @@ android {
 }
 
 repositories {
-    mavenLocal()
+    maven {
+        url 'http://localhost:8081/artifactory/libs-release'
+    }
 }
 
 dependencies {
