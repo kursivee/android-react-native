@@ -1,0 +1,13 @@
+#!/bin/bash
+
+url="http://localhost:8081/artifactory/libs-release"
+repositoryId="central"
+
+function deploy {
+    mvn deploy:deploy-file -Dfile=$(find . -iname $1) -DgroupId=$2 -DartifactId=$3 -Dversion=$4 -Dpackaging=$5 -DrepositoryId=$repositoryId -Durl=$url
+}
+
+yarn install
+# Add files to be deployed here
+deploy "react-native-0.60.3.aar" "com.android" "react-native" "0.60.3" "aar"
+deploy "react-native-0.60.3.aar" "com.android" "react-native" "0.60.4" "aar"
