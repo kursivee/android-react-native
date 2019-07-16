@@ -7,7 +7,7 @@
 - Add dependency in `build.gradle` `[groupId]:[artifactId]:[version]`
 - In this case it would be `implementation "com.android:react-native:0.60.3"`
 - Add `repositories { mavenLocal() }` to build.gradle
-- Or for a local artifactory add `repositories { maven { url 'http://localhost:8081/artifactory/libs-release' } }
+- Or for a local artifactory add `repositories { maven { url 'http://localhost:8081/artifactory/libs-release' } }`
 
 ### Setting up local artifactory
 
